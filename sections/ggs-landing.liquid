@@ -13,29 +13,8 @@
         background-size: cover;
       }
     }
-</style>
-<div class="contents">
-    <div id="heading" style="font-size: 40pt">Galaxy Glow Studio</div>
-    <div id="description" style="font-size: 20pt;">Dedicated to providing innovative 3D printed solutions!</div>
-    <div id="social" style="font-size: 15pt; margin-top: 40px; display: flex">
-    	<div style="line-height: 30px; margin-right: 5px">Follow us on</div>
-    	<div class="social-icon"><img src="{{ 'instagram.png' | asset_img_url: '256x' }}" style="height: 30px; margin-right: 5px"/></div>
-    	<div class="social-icon"><img src="{{ 'youtube.png' | asset_img_url: '256x' }}" style="height: 30px; margin-right: 5px"/></div>
-    	<div class="social-icon"><img src="{{ 'etsy.png' | asset_img_url: '256x' }}" style="height: 30px; margin-right: 5px"/></div>
-  	</div>
-</div>
-
-
-{% schema %}
-  {
-    "name": "ggs-landing",
-    "settings": [],
-	"class": "spaced-section"
-  }
-{% endschema %}
-
-{% stylesheet %}
-	.contents {
+  
+  	.contents {
 		margin-left: 50px;
 		margin-right: 50px;
 	}
@@ -66,6 +45,28 @@
 			background-image: none !important;
 		}
 	}
+</style>
+<div class="contents">
+    <div id="heading" style="font-size: 40pt">Galaxy Glow Studio</div>
+    <div id="description" style="font-size: 20pt;">Dedicated to providing innovative 3D printed solutions!</div>
+    <div id="social" style="font-size: 15pt; margin-top: 40px; display: flex">
+    	<div style="line-height: 30px; margin-right: 5px">Follow us on</div>
+    	<div class="social-icon"><img src="{{ 'instagram.png' | asset_img_url: '256x' }}" style="height: 30px; margin-right: 5px"/></div>
+    	<div class="social-icon"><img src="{{ 'youtube.png' | asset_img_url: '256x' }}" style="height: 30px; margin-right: 5px"/></div>
+    	<div class="social-icon"><img src="{{ 'etsy.png' | asset_img_url: '256x' }}" style="height: 30px; margin-right: 5px"/></div>
+  	</div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "ggs-landing",
+    "settings": [],
+	"class": "spaced-section"
+  }
+{% endschema %}
+
+{% stylesheet %}
 {% endstylesheet %}
 
 {% javascript %}
