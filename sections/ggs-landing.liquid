@@ -1,0 +1,72 @@
+<style>
+  	.gradient {
+		background-image: url({{ 'hexagons.png' | asset_img_url: '1024x' }});
+		background-position: right 0% bottom 0%;
+      	background-size: contain;
+  		background-repeat: no-repeat;
+    }
+  
+  	@media(max-width: 600px) {
+      .gradient {
+        background-image: url({{ 'mobile-hexagons.png' | asset_img_url: '1024x' }});
+        background-position: bottom;
+        background-size: cover;
+      }
+    }
+</style>
+<div class="contents">
+    <div id="heading" style="font-size: 40pt">Galaxy Glow Studio</div>
+    <div id="description" style="font-size: 20pt;">Dedicated to providing innovative 3D printed solutions!</div>
+    <div id="social" style="font-size: 15pt; margin-top: 40px; display: flex">
+    	<div style="line-height: 30px; margin-right: 5px">Follow us on</div>
+    	<div class="social-icon"><img src="{{ 'instagram.png' | asset_img_url: '256x' }}" style="height: 30px; margin-right: 5px"/></div>
+    	<div class="social-icon"><img src="{{ 'youtube.png' | asset_img_url: '256x' }}" style="height: 30px; margin-right: 5px"/></div>
+    	<div class="social-icon"><img src="{{ 'etsy.png' | asset_img_url: '256x' }}" style="height: 30px; margin-right: 5px"/></div>
+  	</div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "ggs-landing",
+    "settings": [],
+	"class": "spaced-section"
+  }
+{% endschema %}
+
+{% stylesheet %}
+	.contents {
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+
+    #description {
+    	width: 40%;
+    }
+
+	@media(max-width: 600px) {
+		.contents {
+			padding-top: 45px;
+		}
+
+    	#heading {
+        	text-align: center;
+		}
+
+		#description {
+			width: 100%;
+			text-align: center;
+		}
+
+		#social {
+			justify-content: center;
+		}
+
+		.container {
+			background-image: none !important;
+		}
+	}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

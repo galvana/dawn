@@ -1,0 +1,35 @@
+<div class="footer">
+    {{ 'Contact us' | link_to: '/pages/contact' }}</br>
+    All rights reserved</br>
+	© 2021 GALAXY GLOW STUDIO
+</div>
+
+{% schema %}
+  {
+    "name": "ggs-footer",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+    .footer {
+        font-size: 8pt;
+        margin-bottom: 20px;
+		margin-left: 50px;
+		margin-right: 50px;
+  	}
+
+  	.footer div:hover {
+  		color: #E1A569;
+  		cursor: pointer;
+  	}
+
+	@media(max-width: 600px) {
+		.footer {
+			text-align: center;
+		}
+	}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

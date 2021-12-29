@@ -1,0 +1,65 @@
+<div class="header">
+  <div class="logo">
+    <a href='/'>
+    	<img src="{{ 'shrimp.png' | asset_img_url: '1800x' }}"/>
+    </a>
+  </div>
+  <div class="navigation">
+    <div>{{ 'About' | link_to: '/pages/about' }}</div>
+    <div>{{ 'Shop' | link_to: routes.all_products_collection_url }}</div>
+    <div>{{ 'Gallery' | link_to: '/pages/gallery' }}</div>
+    <div>{{ 'Cart' | link_to: routes.cart_url }} </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "ggs-header",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+    .header {
+    	display: flex;
+    }
+
+    .logo {
+    	flex-grow: 1;
+    }
+
+    .logo img {
+    	height: 100px;
+    }
+
+    .navigation {
+    	display: flex;
+    	justify-content: flex-end;
+    	font-size: 14pt;
+    }
+
+    .navigation div {
+    	margin-left: 20px;
+    	margin-right: 20px;
+    	line-height: 100px;
+    }
+
+    .navigation div:hover {
+    	color: #E1A569;
+    	cursor: pointer;
+    }
+
+    @media(max-width: 600px) {
+		.logo {
+      		align-self: center;
+      	}
+
+      	.header {
+          	flex-direction: column;
+      	}
+
+      	.navigation {
+      		justify-content: space-around;
+      	}
+    }
+{% endstylesheet %}
