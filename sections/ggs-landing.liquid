@@ -51,9 +51,21 @@
     <div id="description" style="font-size: 20pt;">Dedicated to providing innovative 3D printed solutions!</div>
     <div id="social" style="font-size: 15pt; margin-top: 40px; display: flex">
     	<div style="line-height: 30px; margin-right: 5px">Follow us on</div>
-    	<div class="social-icon"><img src="{{ 'instagram.png' | asset_img_url: '256x' }}" style="height: 30px; margin-right: 5px"/></div>
-    	<div class="social-icon"><img src="{{ 'youtube.png' | asset_img_url: '256x' }}" style="height: 30px; margin-right: 5px"/></div>
-    	<div class="social-icon"><img src="{{ 'etsy.png' | asset_img_url: '256x' }}" style="height: 30px; margin-right: 5px"/></div>
+    	<div class="social-icon">
+				<a href="{{ section.settings.instagram_url }}">
+					<img src="{{ 'instagram.png' | asset_img_url: '256x' }}" style="height: 30px; margin-right: 5px"/>
+				</a>
+			</div>
+    	<div class="social-icon">
+				<a href="{{ section.settings.youtube_url }}">
+					<img src="{{ 'youtube.png' | asset_img_url: '256x' }}" style="height: 30px; margin-right: 5px"/>
+				</a>
+			</div>
+    	<div class="social-icon">
+				<a href="{{ section.settings.etsy_url }}">
+					<img src="{{ 'etsy.png' | asset_img_url: '256x' }}" style="height: 30px; margin-right: 5px"/>
+				</a>
+			</div>
   	</div>
 </div>
 
@@ -61,7 +73,23 @@
 {% schema %}
   {
     "name": "ggs-landing",
-    "settings": [],
+    "settings": [
+			{
+				"type": "text",
+				"id": "instagram_url",
+				"label": "Instagram URL"
+			},
+			{
+				"type": "text",
+				"id": "youtube_url",
+				"label": "YouTube URL"
+			},
+			{
+				"type": "text",
+				"id": "etsy_url",
+				"label": "Etsy URL"
+			}
+		],
 	"class": "spaced-section"
   }
 {% endschema %}
