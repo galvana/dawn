@@ -9,6 +9,7 @@
     "colors_background_2": "#F3F3F3",
     "type_header_font": "assistant_n4",
     "type_body_font": "assistant_n4",
+    "accent_icons": "text",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -33,8 +34,8 @@
         "type": "header",
         "settings": {
           "color_scheme": "background-1",
-          "logo": "shopify:\/\/shop_images\/shrimp.png",
-          "logo_width": 100,
+          "logo": "shopify:\/\/shop_images\/11421900_690c815f-7b8c-4a87-a5eb-61741ae0fd4f.png",
+          "logo_width": 250,
           "logo_position": "middle-left",
           "menu": "main-menu",
           "show_line_separator": true,
